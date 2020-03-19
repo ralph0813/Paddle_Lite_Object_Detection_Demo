@@ -10,7 +10,7 @@
 
 因为本人爬虫能力有限，也就搜集了600多张图片，数据集太小，最后的mAP大概在90左右。
 
-![](https://raw.githubusercontent.com/ralph0813/PicGo/master/20200319195555.png?token=AMDJEQ4XFYTT7JX5ITERKV26ONPA2)
+![](https://raw.githubusercontent.com/ralph0813/PicGo/master/20200319203015.png?token=AMDJEQ7RVG4XWQDL5YB243S6ONTBQ)
 
 
 ------------
