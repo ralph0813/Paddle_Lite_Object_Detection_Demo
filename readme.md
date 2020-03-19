@@ -4,17 +4,6 @@
 我不太熟悉Andriod开发，此demo仅仅在Paddle-Lite-Demo[Paddle-Lite-Demo](https://github.com/PaddlePaddle/PaddleDetection/ "Paddle-Lite-Demo")的基础上替换模型，修改了少量代码，以跑通训练和部署流程为目的。
 
 
-------------
-
-废话不多说，先给大家展示一下效果：
-
-因为本人爬虫能力有限，也就搜集了600多张图片，数据集太小，最后的mAP大概在90左右。
-
-![](https://raw.githubusercontent.com/ralph0813/PicGo/master/20200319203015.png?token=AMDJEQ7RVG4XWQDL5YB243S6ONTBQ)
-
-
-------------
-
 # 正文开始：
 
 ## 1.PaddlePaddle开发环境：
