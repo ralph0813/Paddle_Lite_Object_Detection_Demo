@@ -96,9 +96,9 @@ python tools/export_model.py -c configs/yolov3_mobilenet_v1_mask.yml \
 
 ## 6.替换原demo中的模型
 原demo运行成功，接下来该换上我们自己的模型了。
-### 1. 将模型拷贝到 Paddle-Lite-Demo/PaddleLite-android-demo/object_detection_demo/app/src/main/assets/models/mask 目录下并改名为model.nb。
-###2. 将训练模型时的mask_label_list文件拷贝到 Paddle-Lite-Demo/PaddleLite-android-demo/object_detection_demo/app/src/main/assets/labels/mask_label_list 。
-### 3. 修改 Paddle-Lite-Demo/PaddleLite-android-demo/object_detection_demo/app/src/main/res/values/strings.xml 文件。
+#### 1. 将模型拷贝到 Paddle-Lite-Demo/PaddleLite-android-demo/object_detection_demo/app/src/main/assets/models/mask 目录下并改名为model.nb。
+#### 2. 将训练模型时的mask_label_list文件拷贝到 Paddle-Lite-Demo/PaddleLite-android-demo/object_detection_demo/app/src/main/assets/labels/mask_label_list 。
+#### 3. 修改 Paddle-Lite-Demo/PaddleLite-android-demo/object_detection_demo/app/src/main/res/values/strings.xml 文件。
     <string name="MODEL_PATH_DEFAULT">models/mask</string>
     <string name="LABEL_PATH_DEFAULT">labels/mask_label_list</string>
 
