@@ -101,6 +101,10 @@ python tools/export_model.py -c configs/yolov3_mobilenet_v1_mask.yml \
 #### 3. 修改 Paddle-Lite-Demo/PaddleLite-android-demo/object_detection_demo/app/src/main/res/values/strings.xml 文件。
     <string name="MODEL_PATH_DEFAULT">models/mask</string>
     <string name="LABEL_PATH_DEFAULT">labels/mask_label_list</string>
+    
+    <string name="INPUT_SHAPE_DEFAULT">1,3,320,320</string>
+    <string name="INPUT_MEAN_DEFAULT">0.485,0.456,0.406</string>
+    <string name="INPUT_STD_DEFAULT">0.229,0.224,0.225</string>
 
 #### 4.修改代码：
 将：
