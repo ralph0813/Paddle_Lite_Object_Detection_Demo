@@ -10,7 +10,7 @@
 
 因为本人爬虫能力有限，也就搜集了600多张图片，数据集太小，最后的mAP大概在90左右。
 
-
+![](https://raw.githubusercontent.com/ralph0813/PicGo/master/20200319195555.png?token=AMDJEQ4XFYTT7JX5ITERKV26ONPA2)
 
 
 ------------
@@ -252,7 +252,5 @@ protected float[] inputStd = new float[]{0.229f, 0.224f, 0.225f};
 如果对模型的部署还有问题，欢迎大家来paddle-lite官方群（696965088）和小伙伴们一起探讨。
 
 apk下载链接:https://pan.baidu.com/s/1uWTRb0EvV6gQJF8x8D2pPQ  密码:utl2
-
-模型文件下载链接:https://pan.baidu.com/s/1Qn3j8tBfHG5JOZ-Ye7oU-Q  密码:cuir
 
 注：仅供测试使用，非百度官方发布模型
