@@ -85,23 +85,23 @@ python tools/export_model.py -c configs/yolov3_mobilenet_v1_mask.yml \
 ##### 到这里我们已经得到了mask.nb这个模型文件。
 
 ## 5. 准备Paddle-Lite-Demo
-参考[Github](https://github.com/PaddlePaddle/Paddle-Lite-Demo "Github")的readme准备demo。
+（1）参考[Github](https://github.com/PaddlePaddle/Paddle-Lite-Demo "Github")的readme准备demo。
 在官方 [release](https://paddle-lite.readthedocs.io/zh/latest/user_guides/release_lib.html) 预编译库下载编译库并替换demo中的库，或者手动编译。
-####Android更新预测库
+###Android更新预测库
 替换jar文件：将生成的build.lite.android.xxx.gcc/inference_lite_lib.android.xxx/java/jar/PaddlePredictor.jar替换demo中的Paddle-Lite-Demo/PaddleLite-android-demo/image_classification_demo/app/libs/PaddlePredictor.jar
-替换arm64-v8a jni库文件：将生成build.lite.android.armv8.gcc/inference_lite_lib.android.armv8/java/so/libpaddle_lite_jni.so库替换demo中的Paddle-Lite-Demo/PaddleLite-android-demo/image_classification_demo/app/src/main/jniLibs/arm64-v8a/libpaddle_lite_jni.so
-替换armeabi-v7a jni库文件：将生成的build.lite.android.armv7.gcc/inference_lite_lib.android.armv7/java/so/libpaddle_lite_jni.so库替换demo中的Paddle-Lite-Demo/PaddleLite-android-demo/image_classification_demo/app/src/main/jniLibs/armeabi-v7a/libpaddle_lite_jni.so.
+替换arm64-v8a jni库文件：将生成build.lite.android.armv8.gcc/inference_lite_lib.android.armv8/java/so/libpaddle_lite_jni.so库替换demo中的Paddle-Lite-Demo/PaddleLite-android-demo/image_classification_demo/app/src/main/jniLibs/arm64-v8a/libpaddle_lite_jni.so 替换armeabi-v7a jni库文件：将生成的build.lite.android.armv7.gcc/inference_lite_lib.android.armv7/java/so/libpaddle_lite_jni.so库替换demo中的Paddle-Lite-Demo/PaddleLite-android-demo/image_classification_demo/app/src/main/jniLibs/armeabi-v7a/libpaddle_lite_jni.so.
 ###注意，一定要换的最新的预测库
 
-编译运行object_detection_demo,确保能运行。
+（2）编译运行object_detection_demo,确保能运行。
 
 ## 6.替换原demo中的模型
 原demo运行成功，接下来该换上我们自己的模型了。
-#####1. 将模型拷贝到 Paddle-Lite-Demo/PaddleLite-android-demo/object_detection_demo/app/src/main/assets/models/mask 目录下并改名为model.nb。
-#####2. 将训练模型时的mask_label_list文件拷贝到 Paddle-Lite-Demo/PaddleLite-android-demo/object_detection_demo/app/src/main/assets/labels/mask_label_list 。
-#####3. 修改 Paddle-Lite-Demo/PaddleLite-android-demo/object_detection_demo/app/src/main/res/values/strings.xml 文件。
+####1. 将模型拷贝到 Paddle-Lite-Demo/PaddleLite-android-demo/object_detection_demo/app/src/main/assets/models/mask 目录下并改名为model.nb。
+####2. 将训练模型时的mask_label_list文件拷贝到 Paddle-Lite-Demo/PaddleLite-android-demo/object_detection_demo/app/src/main/assets/labels/mask_label_list 。
+####3. 修改 Paddle-Lite-Demo/PaddleLite-android-demo/object_detection_demo/app/src/main/res/values/strings.xml 文件。
     <string name="MODEL_PATH_DEFAULT">models/mask</string>
     <string name="LABEL_PATH_DEFAULT">labels/mask_label_list</string>
+
 #####4.修改代码：
 将：
 ```java
