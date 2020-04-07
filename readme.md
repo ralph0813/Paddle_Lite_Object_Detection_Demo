@@ -1,4 +1,6 @@
-# Paddle-Lite 安卓端部署
+# 从0到1PaddlePaddle入门之
+# 利用PaddleDetection训练模型
+# 并用Paddle-Lite在安卓端部署
 最近因为疫情原因宅在家里，就搜集了些照片用[PaddleDetection](https://github.com/PaddlePaddle/PaddleDetection/ "PaddleDetection")训练了一个口罩分类的模型，摸索了一下Paddle-Lite的Andriod部署，恰好Paddle-Lite最近也有比较大的迭代更新，这篇博客记录了我的摸索过程和一点点心得。
 
 我不太熟悉Andriod开发，此demo仅仅在Paddle-Lite-Demo[Paddle-Lite-Demo](https://github.com/PaddlePaddle/PaddleDetection/ "Paddle-Lite-Demo")的基础上替换模型，修改了少量代码，以跑通训练和部署流程为目的。
