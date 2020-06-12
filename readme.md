@@ -240,7 +240,7 @@ protected float[] inputStd = new float[]{0.229f, 0.224f, 0.225f};
 	im [1,3,300,300]
 而yolo的模型输入要求为：
 	input0: im [1,3,320,320]
-	input1: im_sz[,320,320]
+	input1: im_sz[320,320]
 ```
 在替换模型之后记得要修改模型的与处理部分，以及模型输出的处理部分。
 
